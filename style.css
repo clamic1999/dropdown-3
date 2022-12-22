@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.navlinks{
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    background-color: black;
+}
+body{
+    background: url("image/nature.jpg");
+    background-size: cover;
+}
+a{
+    color: rgb(248, 243, 243);
+    margin-top: 8px;
+    margin-left: 50px;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    left: 5vh;
+    font-size: 30px;
+    padding: 0px 50px 0px;
+}
+li{
+    display: inline-flex;
+}
+a:hover{
+    color: yellow;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+}
+.country li:hover .dropdown{
+    display: block;
+    background-color: black;
+    width: 150px;
+    top: 93px;
+    text-align: center; 
+    transform: translateX(93px) translateY(-52px); 
+}
+.dropdown li{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 100%;
+    padding: 10px;
+    
+}
+.dropdown a{
+    margin-left: -75px;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+.navlinks .dropdown li:hover .dropdown-menu{
+    display: block;
+    background-color: black;
+    width: 160px;
+    transform: translateX(140px) translateY(-30px);
+    text-align: center;
+    justify-content: space-evenly;
+}
+.dropdown-menu a{
+    margin-left: -100px;
+}
